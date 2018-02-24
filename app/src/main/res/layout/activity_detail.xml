@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.udacity.sandwichclub.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/image_iv"
@@ -83,4 +87,5 @@
         android:layout_toEndOf="@+id/description_label_tv"
         android:layout_below="@+id/place_of_origin_tv"
         android:layout_toRightOf="@+id/description_label_tv" />
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
